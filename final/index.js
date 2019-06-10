@@ -6,7 +6,7 @@ function enter() {
         console.log(sound.play());
     }, 0);
     setTimeout(function() {
-        console.log(window.location.href = "index.html");
+        console.log(window.location.href = "game.html");
     }, 1500);
 }
 
