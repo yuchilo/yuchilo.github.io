@@ -1,298 +1,44 @@
-.cirlce {
-    position: relative;
-    float: left;
-    width: 50px;
-    height: 50px;
-    line-height: 100px;
-    border-radius: 50%;
-    list-style: none;
-    padding: 0;
-    background: #ddd;
-    color: #fff;
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Asap', sans-serif;
 }
 
-.girl {
-    width: 40%;
-    float: left;
-    background-color: azure;
-}
-
-#mirror {
+.bg {
     position: fixed;
-    top: 0px;
-    width: 40%;
-    filter: saturate(70%) brightness(120%)
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    margin: auto;
 }
 
-.makeup {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    width: 60%;
-    height: 750px;
-    margin-right: 0px;
-    float: left;
+.pic {
+    width: 100%;
 }
 
-#storage {
+.bt {
     position: absolute;
-    top: 150px;
-    left: 40%;
-    margin-left: 70px;
-    width: 38%;
-    height: 70.5%;
-    z-index: -1;
+    top: 350px;
+    right: 300px;
+    width: 200px;
+    height: 60px;
 }
 
-.A,
-.B,
-.C,
-.D,
-.E {
-    margin-left: 50px;
-    padding: 20px 10px 10px 40px;
-    float: left;
-    width: 75%;
-}
-
-.E {
-    height: 150px;
-}
-
-.eyeshadow,
-.blush,
-.lip,
-.lens {
-    margin-left: 30px;
-    padding: 25px 20px 20px;
-    width: 400px;
-    height: 100px;
-    float: left;
-}
-
-button {
-    padding: 0px;
-    border: 0px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+#game {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(76, 108, 197);
+    color: rgb(255, 202, 202);
+    font-size: 22pt;
+    letter-spacing: 3px;
+    font-family: 'Quicksand', 'Nunito', 'Asap', sans-serif;
+    font-weight: bolder;
     outline: none;
 }
 
-#eyeicon,
-#blushicon,
-#lipicon {
-    float: left;
-    width: 100px;
-    height: 100px;
-    outline: none;
-}
-
-#lensicon {
-    width: 100px;
-    float: left;
-    outline: none;
-    padding-top: 40px;
-    padding-left: 20px;
-}
-
-#remover {
-    height: 100px;
-    margin-left: 30px;
-}
-
-
-/* Eye Shadow */
-
-#eyebt1,
-#eyebt2,
-#eyebt3,
-#eyebt4 {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    outline: none;
-}
-
-#eyebt1 {
-    background: rgb(239, 168, 190, 61%)!important;
-}
-
-#eyebt2 {
-    background: rgb(232, 192, 166, 70%)!important;
-}
-
-#eyebt3 {
-    background: rgb(178, 149, 134, 60%)!important;
-}
-
-#eyebt4 {
-    background: rgb(216, 208, 115, 60%)!important;
-}
-
-#eye1,
-#eye2,
-#eye3,
-#eye4 {
-    display: none;
-    position: absolute;
-    top: 228px;
-    left: 211px;
-    width: 169px;
-}
-
-
-/* Blush */
-
-#blushbt1,
-#blushbt2,
-#blushbt3,
-#blushbt4 {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    outline: none;
-}
-
-#blushbt1 {
-    background: rgba(204, 99, 92, 30%)!important;
-}
-
-#blushbt2 {
-    background: rgb(249, 163, 133, 30%)!important;
-}
-
-#blushbt3 {
-    background: rgb(247, 164, 211, 30%)!important;
-}
-
-#blushbt4 {
-    background: rgb(237, 168, 100, 30%)!important;
-}
-
-#blush1,
-#blush2,
-#blush3,
-#blush4 {
-    position: absolute;
-    top: 250px;
-    left: 200px;
-    width: 190px;
-}
-
-
-/* Lipstick */
-
-#lipbt1,
-#lipbt2,
-#lipbt3,
-#lipbt4,
-#lipbt5,
-#lipbt6 {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    outline: none;
-}
-
-#lipbt1 {
-    background: rgba(237, 172, 128, 50%)!important;
-}
-
-#lipbt2 {
-    background: rgb(206, 113, 50, 50%)!important;
-}
-
-#lipbt3 {
-    background: rgb(255, 123, 97, 50%)!important;
-}
-
-#lipbt4 {
-    background: rgb(191, 76, 60, 50%)!important;
-}
-
-#lipbt5 {
-    background: rgb(255, 141, 168, 50%)!important;
-}
-
-#lipbt6 {
-    background: rgb(219, 127, 145, 50%)!important;
-}
-
-#lip1,
-#lip2,
-#lip3,
-#lip4,
-#lip5,
-#lip6 {
-    position: absolute;
-    top: 300px;
-    left: 205px;
-    width: 190px;
-}
-
-
-/* contact lens */
-
-#lensbt1,
-#lensbt2,
-#lensbt3,
-#lensbt4 {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    outline: none;
-}
-
-#lensbt1 {
-    background: rgb(193, 168, 154, 60%)!important;
-}
-
-#lensbt2 {
-    background: rgb(232, 192, 166, 60%)!important;
-}
-
-#lensbt3 {
-    background: rgb(61, 60, 60, 60%)!important;
-}
-
-#lensbt4 {
-    background: rgb(117, 128, 155, 60%)!important;
-}
-
-#lens1,
-#lens2,
-#lens3,
-#lens4 {
-    display: none;
-    position: absolute;
-    top: 230px;
-    left: 195px;
-    width: 195px;
-}
-
-#removebt,
-#guidebt,
-#musicbt {
-    outline: none;
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-}
-
-#guidebt {
-    margin-top: 500px;
-}
-
-#remover {
-    height: 100px;
-}
-
-#guide {
-    height: 80px;
-    filter: opacity(85%);
-}
-
-#chgicon {
-    height: 80px;
-    filter: opacity(80%);
+#game:hover {
+    cursor: pointer;
 }

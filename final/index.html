@@ -1,108 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--my CSS-->
     <link rel="stylesheet" href="index.css">
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--google font directory-->
+    <link href="https://fonts.googleapis.com/css?family=Asap|Nunito|Quicksand&display=swap" rel="stylesheet">
     <title>化妝小遊戲</title>
-
 </head>
 
 <body>
-    <!--臉-->
-    <div class="girl">
-        <img src="pic/girl2.png" style="width: 100%">
-        <img id="mirror" src="pic/mirror.png">
+    <!--background music-->
+    <embed src="bg music.mp3" autostart=true hidden=true loop=true>
+    <!--bg pic-->
+    <div class="bg">
+        <img class="pic" src="pic/game-bg-01.png">
     </div>
-
-    <div class="makeup">
-        <!--<div id="glass" onclick="open()"></div>-->
-        <!--眼影按鈕-->
-        <div class="A">
-            <img id="storage" src="pic/storage.png">
-            <img id="eyeicon" src="shadow/eyeshadow-01.png">
-            <div class="eyeshadow">
-                <button id="eyebt1" onclick="eyeshadow1()"></button>
-                <button id="eyebt2" onclick="eyeshadow2()"></button>
-                <button id="eyebt3" onclick="eyeshadow3()"></button>
-                <button id="eyebt4" onclick="eyeshadow4()"></button>
-            </div>
-            <div class="eyeshadowpic">
-                <img id="eye1" src="shadow/eye-pink-01.png">
-                <img id="eye2" src="shadow/eye-brown-01.png">
-                <img id="eye3" src="shadow/eye-darkbrown-01.png">
-                <img id="eye4" src="shadow/eye-green-01.png">
-            </div>
-        </div>
-        <!--腮紅按鈕-->
-        <div class="B">
-            <img id="blushicon" src="blush/blush-01.png">
-            <div class="blush">
-                <button id="blushbt1" onclick="blush1()"></button>
-                <button id="blushbt2" onclick="blush2()"></button>
-                <button id="blushbt3" onclick="blush3()"></button>
-                <button id="blushbt4" onclick="blush4()"></button>
-            </div>
-            <div class="blushpic">
-                <img id="blush1" src="blush/blush1-01.png">
-                <img id="blush2" src="blush/blush2-01.png">
-                <img id="blush3" src="blush/blush3-01.png">
-                <img id="blush4" src="blush/blush4-01.png">
-            </div>
-        </div>
-        <!--唇膏按鈕-->
-        <div class="C">
-            <img id="lipicon" src="lip/lipstick-01.png">
-            <div class="lip">
-                <button id="lipbt1" onclick="lip1()"></button>
-                <button id="lipbt2" onclick="lip2()"></button>
-                <button id="lipbt3" onclick="lip3()"></button>
-                <button id="lipbt4" onclick="lip4()"></button>
-                <button id="lipbt5" onclick="lip5()"></button>
-                <button id="lipbt6" onclick="lip6()"></button>
-            </div>
-            <div class="lippic">
-                <img id="lip1" src="lip/lip1-01.png">
-                <img id="lip2" src="lip/lip2-01.png">
-                <img id="lip3" src="lip/lip3-01.png">
-                <img id="lip4" src="lip/lip4-01.png">
-                <img id="lip5" src="lip/lip5-01.png">
-                <img id="lip6" src="lip/lip6-01.png">
-            </div>
-        </div>
-        <!--隱眼按鈕-->
-        <div class="D">
-            <img id="lensicon" src="lens/lens.png">
-            <div class="lens">
-                <button id="lensbt1" onclick="lens1()"></button>
-                <button id="lensbt2" onclick="lens2()"></button>
-                <button id="lensbt3" onclick="lens3()"></button>
-                <button id="lensbt4" onclick="lens4()"></button>
-            </div>
-            <div class="lenspic">
-                <img id="lens1" src="lens/lens1-01.png">
-                <img id="lens2" src="lens/lens2-01.png">
-                <img id="lens3" src="lens/lens3-01.png">
-                <img id="lens4" src="lens/lens4-01.png">
-            </div>
-        </div>
-        <!--tools-->
-        <div class="E">
-            <button id="removebt" onclick="remove()">
-                <img id="remover" src="pic/remover.png">
-            </button>
-        </div>
-        <button id="guidebt" onclick="guide()">
-            <img id="guide" src="pic/guide.png" title="遊戲指南">
-        </button>
-        <button id="musicbt" onclick="music()">
-            <img src="pic/sound.png"  id="chgicon" title="音樂">
-            <audio id="audio" src="bg music.mp3"></audio>
+    <!--start button-->
+    <div class="bt">
+        <button id="game" onclick="enter()">START
+            <audio id="enter" src="enter.mp3"></audio>
         </button>
     </div>
     <!--my JS-->
@@ -114,4 +33,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html>
