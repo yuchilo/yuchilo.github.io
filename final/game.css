@@ -12,34 +12,36 @@
 }
 
 .girl {
+    position: relative;
     width: 40%;
     float: left;
     background-color: azure;
 }
 
 #mirror {
-    position: fixed;
+    position: absolute;
     top: 0px;
-    width: 40%;
-    filter: saturate(70%) brightness(120%)
+    width: 100%;
+    filter: saturate(70%) brightness(120%);
 }
 
 .makeup {
+    position: relative;
     margin-top: 40px;
     margin-bottom: 20px;
     width: 60%;
     height: 750px;
     margin-right: 0px;
+    padding-left: 20px;
     float: left;
 }
 
 #storage {
     position: absolute;
-    top: 150px;
-    left: 40%;
-    margin-left: 70px;
-    width: 38%;
-    height: 70.5%;
+    top: 120px;
+    margin-left: 0px;
+    width: 60%;
+    height: 72%;
     z-index: -1;
 }
 
@@ -49,7 +51,7 @@
 .D,
 .E {
     margin-left: 50px;
-    padding: 20px 10px 10px 40px;
+    padding: 20px 10px 10px 60px;
     float: left;
     width: 75%;
 }
