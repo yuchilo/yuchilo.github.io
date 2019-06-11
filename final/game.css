@@ -40,7 +40,7 @@
     position: absolute;
     top: 120px;
     margin-left: 0px;
-    width: 60%;
+    width: 65%;
     height: 72%;
     z-index: -1;
 }
@@ -50,10 +50,9 @@
 .C,
 .D,
 .E {
-    margin-left: 50px;
     padding: 20px 10px 10px 60px;
     float: left;
-    width: 75%;
+    width: 90%;
 }
 
 .E {
@@ -262,10 +261,6 @@ button {
     background-color: transparent;
 }
 
-#guidebt {
-    margin-top: 500px;
-}
-
 #remover {
     height: 100px;
 }
@@ -278,4 +273,10 @@ button {
 #chgicon {
     height: 80px;
     filter: opacity(80%);
+}
+
+.bottom {
+    width: 60%;
+    height: 100px;
+    margin-left: 120px;
 }
