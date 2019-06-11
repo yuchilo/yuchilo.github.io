@@ -131,17 +131,6 @@ button {
     background: rgb(216, 208, 115, 60%)!important;
 }
 
-#eye1,
-#eye2,
-#eye3,
-#eye4 {
-    display: none;
-    position: absolute;
-    top: 228px;
-    left: 211px;
-    width: 169px;
-}
-
 
 /* Blush */
 
@@ -169,16 +158,6 @@ button {
 
 #blushbt4 {
     background: rgb(237, 168, 100, 30%)!important;
-}
-
-#blush1,
-#blush2,
-#blush3,
-#blush4 {
-    position: absolute;
-    top: 250px;
-    left: 200px;
-    width: 190px;
 }
 
 
@@ -220,18 +199,6 @@ button {
     background: rgb(219, 127, 145, 50%)!important;
 }
 
-#lip1,
-#lip2,
-#lip3,
-#lip4,
-#lip5,
-#lip6 {
-    position: absolute;
-    top: 300px;
-    left: 205px;
-    width: 190px;
-}
-
 
 /* contact lens */
 
@@ -261,15 +228,28 @@ button {
     background: rgb(117, 128, 155, 60%)!important;
 }
 
+#eye1,
+#eye2,
+#eye3,
+#eye4,
+#blush1,
+#blush2,
+#blush3,
+#blush4,
+#lip1,
+#lip2,
+#lip3,
+#lip4,
+#lip5,
+#lip6,
 #lens1,
 #lens2,
 #lens3,
 #lens4 {
+    top: 0px;
     display: none;
     position: absolute;
-    top: 230px;
-    left: 195px;
-    width: 195px;
+    width: 100%;
 }
 
 #removebt,
